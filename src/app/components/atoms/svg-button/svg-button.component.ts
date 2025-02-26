@@ -1,12 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
   selector: 'app-svg-button',
   standalone: true,
   imports: [],
   templateUrl: './svg-button.component.html',
-  styleUrl: './svg-button.component.scss'
+  styleUrl: './svg-button.component.scss',
 })
-export class SvgButtonComponent {
-
-}
+export class SvgButtonComponent {}
