@@ -1,0 +1,14 @@
+@import "../../../../styles/_typography";
+@import "../../../../styles/colors";
+.btn-cancel {
+  background-color: none;
+  border: 2px solid $btn-cancel;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  color: $btn-cancel;
+  @apply transition-all duration-75 hover:bg-slate-100;
+}

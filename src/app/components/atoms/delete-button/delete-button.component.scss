@@ -1,0 +1,13 @@
+@import "../../../../styles/_typography";
+@import "../../../../styles/colors";
+.btn-delete {
+  background-color: $btn-danger;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
