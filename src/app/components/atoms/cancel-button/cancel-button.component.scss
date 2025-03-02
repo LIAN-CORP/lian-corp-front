@@ -1,11 +1,13 @@
+@import "../../../../styles/_typography";
+@import "../../../../styles/colors";
 .btn-cancel {
   background-color: none;
-  border: 2px solid #8e9094;
+  border: 2px solid $btn-cancel;
   padding: 0.3rem 0.5rem;
   border-radius: 1rem;
   text-align: center;
   font-style: italic;
   font-weight: bold;
   cursor: pointer;
-  color: #8e9094;
+  color: $btn-cancel;
 }

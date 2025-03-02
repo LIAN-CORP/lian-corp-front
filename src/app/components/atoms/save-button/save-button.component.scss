@@ -1,5 +1,7 @@
+@import "../../../../styles/_typography";
+@import "../../../../styles/colors";
 .btn-save {
-  background-color: #6faa47;
+  background-color: $btn-success;
   border: none;
   padding: 0.4rem 0.6rem;
   border-radius: 1rem;
