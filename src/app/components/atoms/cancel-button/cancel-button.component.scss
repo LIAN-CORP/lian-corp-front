@@ -10,4 +10,5 @@
   font-weight: bold;
   cursor: pointer;
   color: $btn-cancel;
+  @apply transition-all duration-75 hover:bg-slate-100;
 }
