@@ -4,6 +4,7 @@ import { CancelButtonComponent } from './components/atoms/cancel-button/cancel-b
 import { DeleteButtonComponent } from './components/atoms/delete-button/delete-button.component';
 import { SvgButtonComponent } from './components/atoms/svg-button/svg-button.component';
 import { SaveButtonComponent } from './components/atoms/save-button/save-button.component';
+import { CardDebtComponent } from './components/molecules/card-debt/card-debt.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { SaveButtonComponent } from './components/atoms/save-button/save-button.
     DeleteButtonComponent,
     SvgButtonComponent,
     SaveButtonComponent,
+    CardDebtComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

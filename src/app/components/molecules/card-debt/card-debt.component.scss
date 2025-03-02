@@ -1,0 +1,20 @@
+@import "../../../../styles/_typography";
+@import "../../../../styles/colors";
+.card-debt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1rem;
+  background-color: #fefffe;
+  border-radius: 1rem;
+  @apply drop-shadow-md;
+  &-client {
+    font-size: $size-M;
+    font-weight: bold;
+  }
+  &-price {
+    font-weight: bold;
+  }
+}
