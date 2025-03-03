@@ -9,5 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class AmountDisplayComponent {
   @Input() label!: string;
-  @Input() amount!: number;
+  @Input() quantity!: number;
+  @Input() price!: number;
 }

@@ -1,4 +1,7 @@
 <div class="amount-container">
   <h4 class="amount-container-label">{{ label }}</h4>
-  <p class="amount-container-data">${{ amount }}</p>
+  @if (quantity) {
+  <p class="amount-container-quantity">{{ quantity }}</p>
+  }
+  <p class="amount-container-price">${{ price }}</p>
 </div>

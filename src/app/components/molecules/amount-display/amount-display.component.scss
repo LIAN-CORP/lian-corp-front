@@ -11,7 +11,12 @@
     font-weight: bold;
     color: $text-quaternary;
   }
-  &-data {
+  &-quantity {
+    font-size: $size-XM;
+    font-weight: bold;
+    color: $text-quaternary;
+  }
+  &-price {
     font-size: $size-XM;
     font-weight: bold;
     color: $text-quaternary;

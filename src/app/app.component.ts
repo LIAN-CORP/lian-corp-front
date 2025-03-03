@@ -26,4 +26,6 @@ import { AmountDisplayComponent } from './components/molecules/amount-display/am
 })
 export class AppComponent {
   title = 'lian-corp-front';
+  price = 1000;
+  quantity = 2;
 }
