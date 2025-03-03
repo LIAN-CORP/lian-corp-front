@@ -6,11 +6,7 @@ import { SvgBgButtonComponent } from '../../atoms/svg-bg-button/svg-bg-button.co
 @Component({
   selector: 'app-card-product',
   standalone: true,
-  imports: [
-    SvgButtonComponent,
-    ShowProductsDataComponent,
-    SvgBgButtonComponent,
-  ],
+  imports: [ShowProductsDataComponent, SvgBgButtonComponent],
   templateUrl: './card-product.component.html',
   styleUrl: './card-product.component.scss',
 })
