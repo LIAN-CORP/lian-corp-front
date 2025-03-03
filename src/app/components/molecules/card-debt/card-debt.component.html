@@ -1,9 +1,9 @@
 <div class="card-debt">
   <h4 class="card-debt-client">{{ client }}</h4>
   <p class="card-debt-price">${{ debt }}</p>
-  <app-svg-button>
+  <app-svg-bg-button bgColor="#5D94FA" (click)="showDetails()">
     <ng-container svg>
       <img src="assets/search.svg" alt="close" />
     </ng-container>
-  </app-svg-button>
+  </app-svg-bg-button>
 </div>

@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SvgButtonComponent } from '../../atoms/svg-button/svg-button.component';
+import { SvgBgButtonComponent } from '../../atoms/svg-bg-button/svg-bg-button.component';
 
 @Component({
   selector: 'app-card-debt',
   standalone: true,
-  imports: [SvgButtonComponent],
+  imports: [SvgBgButtonComponent],
   templateUrl: './card-debt.component.html',
   styleUrl: './card-debt.component.scss',
 })
