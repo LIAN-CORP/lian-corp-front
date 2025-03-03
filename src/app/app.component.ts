@@ -6,6 +6,7 @@ import { SvgButtonComponent } from './components/atoms/svg-button/svg-button.com
 import { SaveButtonComponent } from './components/atoms/save-button/save-button.component';
 import { CardDebtComponent } from './components/molecules/card-debt/card-debt.component';
 import { CardProductComponent } from './components/molecules/card-product/card-product.component';
+import { AmountDisplayComponent } from './components/molecules/amount-display/amount-display.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { CardProductComponent } from './components/molecules/card-product/card-p
     SaveButtonComponent,
     CardDebtComponent,
     CardProductComponent,
+    AmountDisplayComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

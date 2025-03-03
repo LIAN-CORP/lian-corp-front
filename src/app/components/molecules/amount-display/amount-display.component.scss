@@ -1,0 +1,19 @@
+@import "../../../../styles/_typography";
+@import "../../../../styles/colors";
+.amount-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $orange-400;
+  border-radius: 1rem;
+  &-label {
+    font-size: $size-XM;
+    font-weight: bold;
+    color: $text-quaternary;
+  }
+  &-data {
+    font-size: $size-XM;
+    font-weight: bold;
+    color: $text-quaternary;
+  }
+}
