@@ -1,0 +1,41 @@
+<article class="card-product">
+  <div class="card-product-container-image">
+    <img
+      class="product-image"
+      src="https://exitocol.vteximg.com.br/arquivos/ids/26659277/Arroz-Blanco-Bolsa-X-3000g-130407_a.jpg"
+      alt="imagen de producto"
+    />
+  </div>
+  <div class="card-product-content">
+    <div class="card-product-info">
+      <app-show-products-data
+        label="Nombre:"
+        data="arroz diana"
+      ></app-show-products-data>
+      <app-show-products-data
+        label="Categoria:"
+        data="comida"
+      ></app-show-products-data>
+      <app-show-products-data
+        label="Cantidad:"
+        data="90 u/c"
+      ></app-show-products-data>
+      <app-show-products-data
+        label="Precio:"
+        data="2400"
+      ></app-show-products-data>
+    </div>
+    <div class="card-product-actions">
+      <app-svg-bg-button bgColor="#2956A8" (click)="onDelete()">
+        <ng-container svg>
+          <img src="assets/edit.svg" alt="edit" />
+        </ng-container>
+      </app-svg-bg-button>
+      <app-svg-bg-button bgColor="#fc1110" (click)="onEdit()">
+        <ng-container svg>
+          <img src="assets/delete.svg" alt="delete" />
+        </ng-container>
+      </app-svg-bg-button>
+    </div>
+  </div>
+</article>

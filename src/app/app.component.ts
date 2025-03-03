@@ -5,6 +5,7 @@ import { DeleteButtonComponent } from './components/atoms/delete-button/delete-b
 import { SvgButtonComponent } from './components/atoms/svg-button/svg-button.component';
 import { SaveButtonComponent } from './components/atoms/save-button/save-button.component';
 import { CardDebtComponent } from './components/molecules/card-debt/card-debt.component';
+import { CardProductComponent } from './components/molecules/card-product/card-product.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { CardDebtComponent } from './components/molecules/card-debt/card-debt.co
     SvgButtonComponent,
     SaveButtonComponent,
     CardDebtComponent,
+    CardProductComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

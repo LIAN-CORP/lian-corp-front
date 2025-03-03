@@ -1,0 +1,12 @@
+@import "../../../../styles/_typography";
+@import "../../../../styles/colors";
+.btn-svg-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  background-color: $btn-cancel;
+}
