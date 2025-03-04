@@ -7,6 +7,10 @@ import { SaveButtonComponent } from './components/atoms/save-button/save-button.
 import { CardDebtComponent } from './components/molecules/card-debt/card-debt.component';
 import { CardProductComponent } from './components/molecules/card-product/card-product.component';
 import { AmountDisplayComponent } from './components/molecules/amount-display/amount-display.component';
+import { ProductDisplayComponent } from './components/molecules/product-display/product-display.component';
+import { PaymentsDisplayComponent } from './components/molecules/payments-display/payments-display.component';
+import { InvoiceDisplayComponent } from './components/molecules/invoice-display/invoice-display.component';
+import { DebtDisplayComponent } from './components/molecules/debt-display/debt-display.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +24,10 @@ import { AmountDisplayComponent } from './components/molecules/amount-display/am
     CardDebtComponent,
     CardProductComponent,
     AmountDisplayComponent,
+    ProductDisplayComponent,
+    PaymentsDisplayComponent,
+    InvoiceDisplayComponent,
+    DebtDisplayComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

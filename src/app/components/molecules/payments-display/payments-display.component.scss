@@ -1,0 +1,15 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.payment-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $blue-200;
+  border-radius: 1rem;
+  margin: 0.25rem 0.5rem;
+  &-info {
+    font-size: $size-M;
+    font-weight: bold;
+    padding: 0.2rem;
+  }
+}
