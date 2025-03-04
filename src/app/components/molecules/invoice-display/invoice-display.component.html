@@ -1,0 +1,9 @@
+<div class="invoice-content">
+  <p class="invoice-content-info">{{ date }}</p>
+  <p class="invoice-content-info">#{{ invoice }}</p>
+  <app-svg-bg-button bgColor="#619af6" (click)="onDetails()">
+    <ng-container svg>
+      <img src="assets/search.svg" alt="show" />
+    </ng-container>
+  </app-svg-bg-button>
+</div>
