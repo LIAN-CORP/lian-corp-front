@@ -1,0 +1,14 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $blue-200;
+  border-radius: 1rem;
+  &-info {
+    font-size: $size-XXS;
+    font-weight: bold;
+  }
+  @apply drop-shadow;
+}
