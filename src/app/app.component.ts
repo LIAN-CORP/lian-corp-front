@@ -11,24 +11,12 @@ import { ProductDisplayComponent } from './components/molecules/product-display/
 import { PaymentsDisplayComponent } from './components/molecules/payments-display/payments-display.component';
 import { InvoiceDisplayComponent } from './components/molecules/invoice-display/invoice-display.component';
 import { DebtDisplayComponent } from './components/molecules/debt-display/debt-display.component';
+import { ModalComponent } from './components/molecules/modal/modal.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    CancelButtonComponent,
-    DeleteButtonComponent,
-    SvgButtonComponent,
-    SaveButtonComponent,
-    CardDebtComponent,
-    CardProductComponent,
-    AmountDisplayComponent,
-    ProductDisplayComponent,
-    PaymentsDisplayComponent,
-    InvoiceDisplayComponent,
-    DebtDisplayComponent,
-  ],
+  imports: [RouterOutlet, ModalComponent, AmountDisplayComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
