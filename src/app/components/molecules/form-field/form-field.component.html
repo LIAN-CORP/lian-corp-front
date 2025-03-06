@@ -1,0 +1,16 @@
+<div class="field-container">
+  <label [for]="idInput" class="field-container-label">{{ label }}</label>
+  <div class="field-container-content" (click)="click = !click">
+    <input
+      class="field-container-input"
+      [id]="idInput"
+      [type]="type"
+      [placeholder]="placeholder"
+    />
+    @if (click) {
+    <app-errors-display
+      errors="debe tener al menos 8 caracteres"
+    ></app-errors-display>
+    }
+  </div>
+</div>

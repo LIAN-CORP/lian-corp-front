@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CancelButtonComponent } from './components/atoms/cancel-button/cancel-button.component';
-import { DeleteButtonComponent } from './components/atoms/delete-button/delete-button.component';
-import { SvgButtonComponent } from './components/atoms/svg-button/svg-button.component';
-import { SaveButtonComponent } from './components/atoms/save-button/save-button.component';
-import { CardDebtComponent } from './components/molecules/card-debt/card-debt.component';
-import { CardProductComponent } from './components/molecules/card-product/card-product.component';
 import { AmountDisplayComponent } from './components/molecules/amount-display/amount-display.component';
-import { ProductDisplayComponent } from './components/molecules/product-display/product-display.component';
-import { PaymentsDisplayComponent } from './components/molecules/payments-display/payments-display.component';
-import { InvoiceDisplayComponent } from './components/molecules/invoice-display/invoice-display.component';
-import { DebtDisplayComponent } from './components/molecules/debt-display/debt-display.component';
 import { ModalComponent } from './components/molecules/modal/modal.component';
+import { FormFieldComponent } from './components/molecules/form-field/form-field.component';
+import { FormFieldIncrementComponent } from './components/molecules/form-field-increment/form-field-increment.component';
+import { ErrorsDisplayComponent } from './components/molecules/errors-display/errors-display.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ModalComponent, AmountDisplayComponent],
+  imports: [
+    RouterOutlet,
+    ModalComponent,
+    AmountDisplayComponent,
+    FormFieldComponent,
+    FormFieldIncrementComponent,
+    ErrorsDisplayComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

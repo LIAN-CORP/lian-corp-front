@@ -1,0 +1,20 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.errors-container {
+  background-color: $btn-danger;
+  margin: 0 0.3rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  &-span {
+    font-weight: bold;
+    color: $text-secondary;
+    font-size: $size-XXS;
+  }
+}
+@media (width < 800px) {
+  .errors-container {
+    &-span {
+      font-size: $size-XS;
+    }
+  }
+}
