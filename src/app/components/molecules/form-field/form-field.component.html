@@ -1,16 +1,15 @@
 <div class="field-container">
-  <label [for]="idInput" class="field-container-label">{{ label }}</label>
-  <div class="field-container-content" (click)="click = !click">
+  <label [for]="idInput()" class="field-container-label">{{ label() }}</label>
+  <div class="field-container-content">
     <input
       class="field-container-input"
-      [id]="idInput"
-      [type]="type"
-      [placeholder]="placeholder"
+      [id]="idInput()"
+      [type]="type()"
+      [placeholder]="placeholder()"
+      [formControl]="control"
     />
-    @if (click) {
-    <app-errors-display
-      errors="debe tener al menos 8 caracteres"
-    ></app-errors-display>
+    @if (control.invalid && (control.dirty || control.touched)) {
+    <app-errors-display {{getErrorMessages()}}></app-errors-display>
     }
   </div>
 </div>
