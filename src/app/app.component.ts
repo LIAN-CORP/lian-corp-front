@@ -5,6 +5,7 @@ import { ModalComponent } from './components/molecules/modal/modal.component';
 import { FormFieldComponent } from './components/molecules/form-field/form-field.component';
 import { FormFieldIncrementComponent } from './components/molecules/form-field-increment/form-field-increment.component';
 import { ErrorsDisplayComponent } from './components/molecules/errors-display/errors-display.component';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,10 @@ import { ErrorsDisplayComponent } from './components/molecules/errors-display/er
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  control = new FormControl('', Validators.required);
   title = 'lian-corp-front';
   price = 1000;
   quantity = 2;
+  min = 10;
+  max = 100;
 }

@@ -1,1 +1,45 @@
-<p>form-field-increment works!</p>
+<div class="increment-container">
+  <app-svg-button class="increment-container-button" (click)="decrement()">
+    <ng-container svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1.2em"
+        height="1.5em"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="#f50b16"
+          d="M432 256c0 17.7-14.3 32-32 32H48c-17.7 0-32-14.3-32-32s14.3-32 32-32h352c17.7 0 32 14.3 32 32"
+        />
+      </svg>
+    </ng-container>
+  </app-svg-button>
+  <div class="increment-container-content">
+    <input
+      class="increment-container-input"
+      type="number"
+      [min]="min"
+      [max]="max"
+      [formControl]="control"
+      [value]="control.value"
+    />
+    @if (control.invalid && (control.dirty || control.touched)) {
+    <app-errors-display [errors]="getErrorMessages()"></app-errors-display>
+    }
+  </div>
+  <app-svg-button class="increment-container-button" (click)="increment()">
+    <ng-container svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1.5em"
+        height="1.5em"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="#5c8c60"
+          d="M18 10h-4V6a2 2 0 0 0-4 0l.071 4H6a2 2 0 0 0 0 4l4.071-.071L10 18a2 2 0 0 0 4 0v-4.071L18 14a2 2 0 0 0 0-4"
+        />
+      </svg>
+    </ng-container>
+  </app-svg-button>
+</div>
