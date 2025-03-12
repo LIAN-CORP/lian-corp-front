@@ -11,7 +11,7 @@ import { GetListProductResponse } from '../../../data/inventory/dtos/response/ge
   styleUrl: './card-product.component.scss',
 })
 export class CardProductComponent {
-  product = input<GetListProductResponse>();
+  product = input.required<GetListProductResponse>();
 
   deleteProduct = output<void>();
   editProduct = output<void>();
