@@ -1,0 +1,12 @@
+.card-product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+  padding: 1rem;
+  gap: 1.25rem;
+}
+
+@media (width < 800px) {
+  .card-product-container {
+    padding: 1rem 0;
+  }
+}
