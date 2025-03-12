@@ -1,0 +1,16 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.invoice-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin: 0.25rem 0.5rem;
+  &-info {
+    font-size: $size-M;
+    font-weight: bold;
+    padding: 0.2rem;
+  }
+  @apply drop-shadow;
+}

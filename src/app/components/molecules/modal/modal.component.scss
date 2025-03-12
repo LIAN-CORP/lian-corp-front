@@ -1,0 +1,45 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.modal-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+  background-color: $blue-100;
+  min-width: 250px;
+  &-head {
+    .modal-title {
+      font-size: $size-M;
+      font-weight: bold;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #4747b8;
+    color: $text-secondary;
+    padding: 0.3rem 1rem;
+  }
+  &-body {
+    padding: 0.5rem 1rem;
+  }
+  @apply drop-shadow-md;
+}

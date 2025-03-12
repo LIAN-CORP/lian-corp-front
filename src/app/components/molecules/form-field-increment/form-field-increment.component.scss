@@ -1,0 +1,28 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.increment-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  &-input {
+    border: solid 2px black;
+    text-align: center;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  &-content {
+    flex-grow: 1;
+  }
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

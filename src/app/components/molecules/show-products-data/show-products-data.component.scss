@@ -1,0 +1,15 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.container-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  &-label {
+    font-weight: bold;
+    font-size: $size-M;
+  }
+  &-data {
+    text-align: left;
+    font-size: $size-M;
+  }
+}
