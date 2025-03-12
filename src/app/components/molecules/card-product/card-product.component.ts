@@ -1,7 +1,7 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { SvgButtonComponent } from '../../atoms/svg-button/svg-button.component';
+import { Component, input, output } from '@angular/core';
 import { ShowProductsDataComponent } from '../show-products-data/show-products-data.component';
 import { SvgBgButtonComponent } from '../../atoms/svg-bg-button/svg-bg-button.component';
+import { GetListProductResponse } from '../../../data/inventory/dtos/response/get.list.product.response';
 
 @Component({
   selector: 'app-card-product',
@@ -11,14 +11,15 @@ import { SvgBgButtonComponent } from '../../atoms/svg-bg-button/svg-bg-button.co
   styleUrl: './card-product.component.scss',
 })
 export class CardProductComponent {
-  @Output() deleteProduct = new EventEmitter<void>();
-  @Output() editProduct = new EventEmitter<void>();
+  product = input<GetListProductResponse>();
+
+  deleteProduct = output<void>();
+  editProduct = output<void>();
+
   onDelete() {
     this.deleteProduct.emit();
-    console.log('delete');
   }
   onEdit() {
     this.editProduct.emit();
-    console.log('edit');
   }
 }

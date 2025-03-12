@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ShowProductsDataComponent {
   @Input() label!: string;
-  @Input() data!: string;
+  @Input() data!: any;
 }
