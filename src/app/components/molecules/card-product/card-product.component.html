@@ -20,40 +20,40 @@
         label="Precio:"
         [data]="'$' + product().price"
       ></app-show-products-data>
-    </div>
-    <div class="card-product-actions">
-      <app-svg-bg-button bgColor="#2956A8" (click)="onDelete()">
-        <ng-container svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1.5em"
-            height="1.5em"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="none"
-              stroke="#ffffff"
-              stroke-width="2"
-              d="m14 4l6 6zm8.294 1.294c.39.39.387 1.025-.008 1.42L9 20l-7 2l2-7L17.286 1.714a1 1 0 0 1 1.42-.008zM3 19l2 2m2-4l8-8"
-            />
-          </svg>
-        </ng-container>
-      </app-svg-bg-button>
-      <app-svg-bg-button bgColor="#fc1110" (click)="onEdit()">
-        <ng-container svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1.5em"
-            height="1.5em"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="#ffffff"
-              d="M7 21q-.825 0-1.412-.587T5 19V6q-.425 0-.712-.288T4 5t.288-.712T5 4h4q0-.425.288-.712T10 3h4q.425 0 .713.288T15 4h4q.425 0 .713.288T20 5t-.288.713T19 6v13q0 .825-.587 1.413T17 21zm3-4q.425 0 .713-.288T11 16V9q0-.425-.288-.712T10 8t-.712.288T9 9v7q0 .425.288.713T10 17m4 0q.425 0 .713-.288T15 16V9q0-.425-.288-.712T14 8t-.712.288T13 9v7q0 .425.288.713T14 17"
-            />
-          </svg>
-        </ng-container>
-      </app-svg-bg-button>
+      <div class="card-product-actions">
+        <app-svg-bg-button bgColor="#2956A8" (click)="onDelete()">
+          <ng-container svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                d="m14 4l6 6zm8.294 1.294c.39.39.387 1.025-.008 1.42L9 20l-7 2l2-7L17.286 1.714a1 1 0 0 1 1.42-.008zM3 19l2 2m2-4l8-8"
+              />
+            </svg>
+          </ng-container>
+        </app-svg-bg-button>
+        <app-svg-bg-button bgColor="#fc1110" (click)="onEdit()">
+          <ng-container svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.5em"
+              height="1.5em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#ffffff"
+                d="M7 21q-.825 0-1.412-.587T5 19V6q-.425 0-.712-.288T4 5t.288-.712T5 4h4q0-.425.288-.712T10 3h4q.425 0 .713.288T15 4h4q.425 0 .713.288T20 5t-.288.713T19 6v13q0 .825-.587 1.413T17 21zm3-4q.425 0 .713-.288T11 16V9q0-.425-.288-.712T10 8t-.712.288T9 9v7q0 .425.288.713T10 17m4 0q.425 0 .713-.288T15 16V9q0-.425-.288-.712T14 8t-.712.288T13 9v7q0 .425.288.713T14 17"
+              />
+            </svg>
+          </ng-container>
+        </app-svg-bg-button>
+      </div>
     </div>
   </div>
 </article>
