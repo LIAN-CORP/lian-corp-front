@@ -1,6 +1,8 @@
 @import "../../../../styles/colors.scss";
 @import "../../../../styles/typography.scss";
-
+:host {
+  padding: 0.5rem;
+}
 .card-product {
   display: grid;
   grid-template-columns: 1fr 1fr;
