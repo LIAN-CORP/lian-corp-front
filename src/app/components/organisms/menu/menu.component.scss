@@ -1,0 +1,39 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.menu-container {
+  background-color: rgba(0, 0, 0, 0.294);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 50%;
+  background-color: $blue-950;
+  position: fixed;
+  right: 0;
+  gap: 1rem;
+  padding: 2rem 2rem 4rem 2rem;
+  &-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .menu-foot {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+  }
+}
+
+@media (width < 500px) {
+  .menu {
+    width: 100%;
+  }
+}

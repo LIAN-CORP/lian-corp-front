@@ -8,7 +8,9 @@
   background-color: $blue-950;
   position: sticky;
   z-index: 10;
+  width: 100%;
   top: 0;
+  border-radius: 0 0 1rem 1rem;
   &-button {
     display: none;
     color: $text-secondary;
@@ -34,7 +36,7 @@
     }
   }
 }
-@media (width < 1370px) {
+@media (width < 1400px) {
   .nav {
     padding: 1rem 2rem;
     &-title {
@@ -47,12 +49,19 @@
       &-item {
         font-size: $size-M;
       }
+      .log-out {
+        svg {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
     }
   }
 }
 @media (width < 800px) {
   .nav {
     padding: 0.5rem 2rem;
+    border-radius: 0;
     &-title {
       font-size: $size-XL;
     }

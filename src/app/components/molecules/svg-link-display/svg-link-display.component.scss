@@ -1,0 +1,13 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 2rem;
+
+  &-ref {
+    color: $text-secondary;
+    font-size: $size-XM;
+  }
+}
