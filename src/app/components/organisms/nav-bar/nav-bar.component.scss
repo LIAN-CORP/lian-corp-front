@@ -1,0 +1,73 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.nav {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: $blue-950;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  &-button {
+    display: none;
+    color: $text-secondary;
+  }
+  &-title {
+    font-family: $font_secondary;
+    color: $text-secondary;
+    font-size: $size-XXL;
+  }
+  &-title::before {
+    content: "COMERCIALIZADORA LIAN";
+  }
+  &-options {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    &-item {
+      color: $text-secondary;
+      font-size: $size-L;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+  }
+}
+@media (width < 1370px) {
+  .nav {
+    padding: 1rem 2rem;
+    &-title {
+      font-size: $size-XL;
+    }
+    &-title::before {
+      content: "COM.LIAN";
+    }
+    &-options {
+      &-item {
+        font-size: $size-M;
+      }
+    }
+  }
+}
+@media (width < 800px) {
+  .nav {
+    padding: 0.5rem 2rem;
+    &-title {
+      font-size: $size-XL;
+    }
+    &-title::before {
+      content: "COM.LIAN";
+    }
+    &-button {
+      display: flex;
+      align-items: center;
+    }
+    &-options {
+      display: none;
+      &.active {
+        display: flex;
+      }
+    }
+  }
+}
