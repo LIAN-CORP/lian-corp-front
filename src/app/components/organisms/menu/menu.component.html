@@ -1,127 +1,122 @@
-@if(showMenu){
-<section class="menu-container">
-  <div class="menu">
-    <div class="menu-body">
-      <app-svg-link-display label="Transacción" link="#">
-        <ng-container svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 24 24"
-          >
-            <g
-              fill="none"
-              stroke="#f4f4f4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              color="#f4f4f4"
-            >
-              <path
-                d="M4.58 8.607L2 8.454C3.849 3.704 9.158 1 14.333 2.344c5.513 1.433 8.788 6.918 7.314 12.25c-1.219 4.411-5.304 7.337-9.8 7.406"
-              />
-              <path
-                d="M12 22C6.5 22 2 17 2 11m11.604-1.278c-.352-.37-1.213-1.237-2.575-.62c-1.361.615-1.577 2.596.482 2.807c.93.095 1.537-.11 2.093.47c.556.582.659 2.198-.761 2.634s-2.341-.284-2.588-.509m1.653-6.484v.79m0 6.337v.873"
-              />
-            </g>
-          </svg>
-        </ng-container>
-      </app-svg-link-display>
-      <app-svg-link-display label="Inventario" link="#">
-        <ng-container svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 24 24"
+<div class="menu shadow-lg" [ngClass]="{ open: showMenu }">
+  <div class="menu-body">
+    <app-svg-link-display label="Transacción" link="#">
+      <ng-container svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fill="none"
+            stroke="#f4f4f4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            color="#f4f4f4"
           >
             <path
-              fill="#f4f4f4"
-              fill-rule="evenodd"
-              d="M0 4.6A2.6 2.6 0 0 1 2.6 2h18.8A2.6 2.6 0 0 1 24 4.6v.8A2.6 2.6 0 0 1 21.4 8H21v10.6c0 1.33-1.07 2.4-2.4 2.4H5.4C4.07 21 3 19.93 3 18.6V8h-.4A2.6 2.6 0 0 1 0 5.4zM2.6 4a.6.6 0 0 0-.6.6v.8a.6.6 0 0 0 .6.6h18.8a.6.6 0 0 0 .6-.6v-.8a.6.6 0 0 0-.6-.6zM8 10a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
-              clip-rule="evenodd"
+              d="M4.58 8.607L2 8.454C3.849 3.704 9.158 1 14.333 2.344c5.513 1.433 8.788 6.918 7.314 12.25c-1.219 4.411-5.304 7.337-9.8 7.406"
             />
-          </svg>
-        </ng-container>
-      </app-svg-link-display>
-      <app-svg-link-display label="Deudores" link="#">
-        <ng-container svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 20 20"
-          >
             <path
-              fill="#f4f4f4"
-              d="M10 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8m-4.991 9A2 2 0 0 0 3 13c0 1.691.833 2.966 2.135 3.797c1.086.692 2.493 1.075 4.026 1.176A3 3 0 0 1 9 17v-4c0-.768.289-1.47.764-2zM10 13a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2zm6.5 3h-4a.5.5 0 1 0 0 1h4a.5.5 0 1 0 0-1m-4-3a.5.5 0 1 0 0 1h4a.5.5 0 1 0 0-1z"
+              d="M12 22C6.5 22 2 17 2 11m11.604-1.278c-.352-.37-1.213-1.237-2.575-.62c-1.361.615-1.577 2.596.482 2.807c.93.095 1.537-.11 2.093.47c.556.582.659 2.198-.761 2.634s-2.341-.284-2.588-.509m1.653-6.484v.79m0 6.337v.873"
             />
-          </svg>
-        </ng-container>
-      </app-svg-link-display>
-      <app-svg-link-display label="Informes" link="#">
-        <ng-container svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 512 512"
-          >
-            <path
-              fill="#f4f4f4"
-              d="M255.993 8.045c-32.183-1.174-57.105 21.062-84.092 35.034c-36.705 21.758-74.502 41.83-110.476 64.716c-23.53 19.125-34.341 49.9-31.87 79.619c.137 52.692-.273 105.396.207 158.08c3.047 31.9 25.167 58.973 53.631 72.318c45.694 26.225 91.12 52.938 136.981 78.857c29.154 13.294 63.667 7.703 89.457-10.283c45.56-26.464 91.402-52.46 136.783-79.219c26.105-18.586 38.497-51.277 35.818-82.6c-.137-52.693.274-105.396-.207-158.08c-3.05-31.898-25.166-58.977-53.633-72.316c-45.695-26.22-91.129-52.915-136.988-78.837c-11.1-5.156-23.43-7.255-35.61-7.29m-28.695 132.69h57.4v230.52h-57.4zm72.231 50.174h57.372v180.346H299.53zm-144.452 94.08h57.39v86.266h-57.39z"
-            /></svg
-        ></ng-container>
-      </app-svg-link-display>
-    </div>
-    <div class="menu-foot">
-      <app-svg-bg-button bgColor="#ffffff" (click)="onCloseMenu()">
-        <ng-container svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 24 24"
-          >
-            <g fill="none">
-              <path
-                d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
-              />
-              <path
-                fill="#8a8989"
-                d="M6.046 11.677A7.5 7.5 0 0 1 20 15.5a1 1 0 1 0 2 0A9.5 9.5 0 0 0 4.78 9.963l-.537-3.045a1 1 0 1 0-1.97.347l1.042 5.909a1 1 0 0 0 .412.645a1.1 1.1 0 0 0 .975.125l5.68-1.001a1 1 0 1 0-.347-1.97z"
-              />
-            </g>
-          </svg>
-        </ng-container>
-      </app-svg-bg-button>
-
-      <app-svg-bg-button bgColor="#fd1415" (click)="onLogout()">
-        <ng-container svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 24 24"
-          >
-            <g
-              fill="none"
-              stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-            >
-              <path
-                d="M14 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-2"
-              />
-              <path d="M9 12h12l-3-3m0 6l3-3" />
-            </g>
-          </svg>
-        </ng-container>
-      </app-svg-bg-button>
-    </div>
+          </g>
+        </svg>
+      </ng-container>
+    </app-svg-link-display>
+    <app-svg-link-display label="Inventario" link="#">
+      <ng-container svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#f4f4f4"
+            fill-rule="evenodd"
+            d="M0 4.6A2.6 2.6 0 0 1 2.6 2h18.8A2.6 2.6 0 0 1 24 4.6v.8A2.6 2.6 0 0 1 21.4 8H21v10.6c0 1.33-1.07 2.4-2.4 2.4H5.4C4.07 21 3 19.93 3 18.6V8h-.4A2.6 2.6 0 0 1 0 5.4zM2.6 4a.6.6 0 0 0-.6.6v.8a.6.6 0 0 0 .6.6h18.8a.6.6 0 0 0 .6-.6v-.8a.6.6 0 0 0-.6-.6zM8 10a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </ng-container>
+    </app-svg-link-display>
+    <app-svg-link-display label="Deudores" link="#">
+      <ng-container svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill="#f4f4f4"
+            d="M10 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8m-4.991 9A2 2 0 0 0 3 13c0 1.691.833 2.966 2.135 3.797c1.086.692 2.493 1.075 4.026 1.176A3 3 0 0 1 9 17v-4c0-.768.289-1.47.764-2zM10 13a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2zm6.5 3h-4a.5.5 0 1 0 0 1h4a.5.5 0 1 0 0-1m-4-3a.5.5 0 1 0 0 1h4a.5.5 0 1 0 0-1z"
+          />
+        </svg>
+      </ng-container>
+    </app-svg-link-display>
+    <app-svg-link-display label="Informes" link="#">
+      <ng-container svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="#f4f4f4"
+            d="M255.993 8.045c-32.183-1.174-57.105 21.062-84.092 35.034c-36.705 21.758-74.502 41.83-110.476 64.716c-23.53 19.125-34.341 49.9-31.87 79.619c.137 52.692-.273 105.396.207 158.08c3.047 31.9 25.167 58.973 53.631 72.318c45.694 26.225 91.12 52.938 136.981 78.857c29.154 13.294 63.667 7.703 89.457-10.283c45.56-26.464 91.402-52.46 136.783-79.219c26.105-18.586 38.497-51.277 35.818-82.6c-.137-52.693.274-105.396-.207-158.08c-3.05-31.898-25.166-58.977-53.633-72.316c-45.695-26.22-91.129-52.915-136.988-78.837c-11.1-5.156-23.43-7.255-35.61-7.29m-28.695 132.69h57.4v230.52h-57.4zm72.231 50.174h57.372v180.346H299.53zm-144.452 94.08h57.39v86.266h-57.39z"
+          /></svg
+      ></ng-container>
+    </app-svg-link-display>
   </div>
-</section>
+  <div class="menu-foot">
+    <app-svg-bg-button bgColor="#ffffff" (click)="onCloseMenu()">
+      <ng-container svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 24 24"
+        >
+          <g fill="none">
+            <path
+              d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+            />
+            <path
+              fill="#8a8989"
+              d="M6.046 11.677A7.5 7.5 0 0 1 20 15.5a1 1 0 1 0 2 0A9.5 9.5 0 0 0 4.78 9.963l-.537-3.045a1 1 0 1 0-1.97.347l1.042 5.909a1 1 0 0 0 .412.645a1.1 1.1 0 0 0 .975.125l5.68-1.001a1 1 0 1 0-.347-1.97z"
+            />
+          </g>
+        </svg>
+      </ng-container>
+    </app-svg-bg-button>
 
-}
+    <app-svg-bg-button bgColor="#fd1415" (click)="onLogout()">
+      <ng-container svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fill="none"
+            stroke="#fff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <path
+              d="M14 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-2"
+            />
+            <path d="M9 12h12l-3-3m0 6l3-3" />
+          </g>
+        </svg>
+      </ng-container>
+    </app-svg-bg-button>
+  </div>
+</div>

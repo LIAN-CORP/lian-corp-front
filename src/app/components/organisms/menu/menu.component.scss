@@ -1,25 +1,20 @@
 @import "../../../../styles/colors.scss";
 @import "../../../../styles/typography.scss";
-.menu-container {
-  background-color: rgba(0, 0, 0, 0.294);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  right: 0;
-}
 .menu {
   display: flex;
+  visibility: hidden;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
-  width: 50%;
+  height: 100%;
+  width: 0;
   background-color: $blue-950;
   position: fixed;
+  top: 0;
   right: 0;
+  padding: 1rem 2rem;
   gap: 1rem;
-  padding: 2rem 2rem 4rem 2rem;
+  z-index: 10;
+  transition: width 0.3s ease-out;
   &-body {
     display: flex;
     flex-direction: column;
@@ -30,10 +25,17 @@
     justify-content: space-evenly;
     border-radius: 1rem;
   }
+  &.open {
+    visibility: visible;
+    width: 50%;
+  }
 }
 
 @media (width < 500px) {
   .menu {
-    width: 100%;
+    &.open {
+      visibility: visible;
+      width: 100%;
+    }
   }
 }
