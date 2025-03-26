@@ -16,6 +16,11 @@ export class FormFieldComponent {
   placeholder = input<string>();
   @Input({ required: true }) control!: FormControl;
 
+  onInput(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.control.setValue(target.value);
+  }
+
   getMessageError(): string {
     const errors = this.control.errors;
     if (errors?.['required']) {

@@ -14,6 +14,8 @@ export class FormFieldIncrementComponent implements OnInit {
   @Input({ required: true }) control!: FormControl;
   @Input({ required: true }) min!: number;
   @Input({ required: true }) max!: number;
+  inputId = input.required<string>();
+  label = input.required<string>();
   ngOnInit(): void {}
   increment() {
     if (this.control.value < this.max && this.control.value >= this.min) {

@@ -1,0 +1,22 @@
+<form class="edit-form">
+  <img
+    class="edit-form-image"
+    src="https://cdn-icons-png.flaticon.com/512/2175/2175188.png"
+    alt=""
+  />
+  <div class="edit-form-controls">
+    <app-form-field
+      label="Precio"
+      idInput="price-field"
+      type="number"
+      [control]="priceControl"
+    />
+    <app-form-field-increment
+      label="Cantidad"
+      inputId="quantity-field"
+      [control]="quantityControl"
+      [min]="0"
+      [max]="1000"
+    />
+  </div>
+</form>
