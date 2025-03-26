@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-delete-button',
@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './delete-button.component.scss',
 })
 export class DeleteButtonComponent {
-  @Input() text!: string;
+  text = input.required<string>();
+  type = input<string>();
 }

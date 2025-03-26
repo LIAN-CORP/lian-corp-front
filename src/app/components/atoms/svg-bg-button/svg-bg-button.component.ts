@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, Input } from '@angular/core';
 
 @Component({
   selector: 'app-svg-bg-button',
@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './svg-bg-button.component.scss',
 })
 export class SvgBgButtonComponent {
-  @Input() bgColor!: string;
+  bgColor = input.required<string>();
+  type = input<string>('button');
 }

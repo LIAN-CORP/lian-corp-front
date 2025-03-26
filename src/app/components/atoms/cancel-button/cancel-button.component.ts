@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-cancel-button',
@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './cancel-button.component.scss',
 })
 export class CancelButtonComponent {
-  @Input() text!: string;
+  text = input.required<string>();
+  type = input<string>();
 }

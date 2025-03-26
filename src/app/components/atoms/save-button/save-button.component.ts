@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, Input } from '@angular/core';
 
 @Component({
   selector: 'app-save-button',
@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './save-button.component.scss',
 })
 export class SaveButtonComponent {
-  @Input() text!: string;
+  text = input.required<string>();
+  type = input<string>();
 }
