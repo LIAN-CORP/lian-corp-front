@@ -1,5 +1,7 @@
 <div class="increment-container">
-  <label [for]="inputId()">{{ label() }}</label>
+  <label class="increment-container-label" [for]="inputId()">{{
+    label()
+  }}</label>
   <app-svg-button class="increment-container-button" (click)="decrement()">
     <ng-container svg>
       <svg

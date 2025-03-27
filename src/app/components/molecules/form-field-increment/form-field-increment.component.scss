@@ -6,14 +6,33 @@
   gap: 1rem;
   padding: 0.5rem;
   width: 100%;
+  &-label {
+    text-align: left;
+    font-size: $size-M;
+  }
   &-input {
-    border: solid 2px black;
+    border: solid 1px black;
     text-align: center;
+    font-size: $size-M;
     width: 100%;
     border-radius: 1rem;
   }
+  &-input:focus {
+    border: solid 1px $btn-info;
+    outline: none;
+  }
   &-content {
     flex-grow: 1;
+  }
+}
+@media (width < 800px) {
+  .increment-container {
+    &-label {
+      font-size: $size-XXS;
+    }
+    &-input {
+      font-size: $size-XXS;
+    }
   }
 }
 input[type="number"] {
