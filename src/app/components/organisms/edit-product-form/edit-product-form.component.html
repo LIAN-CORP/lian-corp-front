@@ -1,9 +1,6 @@
-<form class="edit-form">
-  <img
-    class="edit-form-image"
-    src="https://cdn-icons-png.flaticon.com/512/2175/2175188.png"
-    alt=""
-  />
+<form class="edit-form" [formGroup]="editProductForm" (ngSubmit)="onSubmit()">
+  <img class="edit-form-image" [src]="product().thumbnail" alt="" />
+  <h4 class="edit-form-title">{{ product().name }}</h4>
   <div class="edit-form-controls">
     <app-form-field
       label="Precio"
@@ -19,4 +16,5 @@
       [max]="1000"
     />
   </div>
+  <app-save-button text="Guardar" type="submit" />
 </form>

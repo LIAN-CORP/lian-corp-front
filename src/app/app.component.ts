@@ -17,4 +17,13 @@ import { EditProductFormComponent } from './components/organisms/edit-product-fo
 })
 export class AppComponent {
   title = 'lian-corp-front';
+  product = {
+    id: 2,
+    name: 'Product 2',
+    thumbnail:
+      'https://colanta.vtexassets.com/arquivos/ids/157503/8212-1.png?v=638180372597300000',
+    category: 'Category 2',
+    price: 1500,
+    quantity: 20,
+  };
 }
