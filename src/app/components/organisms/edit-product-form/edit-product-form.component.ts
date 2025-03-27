@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
 import { FormFieldComponent } from '../../molecules/form-field/form-field.component';
 import {
   FormBuilder,
@@ -23,14 +23,17 @@ import { GetListProductResponse } from '../../../data/inventory/dtos/response/ge
   templateUrl: './edit-product-form.component.html',
   styleUrl: './edit-product-form.component.scss',
 })
-export class EditProductFormComponent {
+export class EditProductFormComponent implements OnInit {
   product = input.required<GetListProductResponse>();
   editProductForm: FormGroup;
   constructor(private fb: FormBuilder) {
     this.editProductForm = this.fb.group({
-      price: ['', Validators.required],
+      price: [0, Validators.required],
       quantity: [1, Validators.required],
     });
+  }
+  ngOnInit(): void {
+    this.priceControl.setValue(this.product().price);
   }
   get priceControl(): FormControl {
     return this.editProductForm.get('price') as FormControl;

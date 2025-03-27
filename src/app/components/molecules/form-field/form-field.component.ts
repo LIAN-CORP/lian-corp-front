@@ -14,7 +14,6 @@ export class FormFieldComponent {
   idInput = input.required<string>();
   type = input.required<string>();
   placeholder = input<string>('');
-  value = input<string>();
   @Input({ required: true }) control!: FormControl;
 
   onInput(event: Event) {
