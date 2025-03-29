@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { InventoryScreenComponent } from './components/organisms/inventory-screen/inventory-screen.component';
 import { NavBarComponent } from './components/organisms/nav-bar/nav-bar.component';
 import { EditProductFormComponent } from './components/organisms/edit-product-form/edit-product-form.component';
+import { PaginationComponent } from './components/molecules/pagination/pagination.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,6 +12,7 @@ import { EditProductFormComponent } from './components/organisms/edit-product-fo
     InventoryScreenComponent,
     NavBarComponent,
     EditProductFormComponent,
+    PaginationComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

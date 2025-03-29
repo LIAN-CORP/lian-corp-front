@@ -1,0 +1,44 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/typography.scss";
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  .pagination-display {
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    //border: solid 1px $blue-950;
+    gap: 0.3rem;
+    .page {
+      border-radius: 0.4rem;
+      user-select: none;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .page:hover {
+      background-color: $blue-950;
+      color: $blue-100;
+    }
+    @apply shadow-md;
+  }
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 0.5rem;
+    user-select: none;
+    @apply shadow-md;
+  }
+  &-button:hover {
+    background-color: $blue-950;
+    color: $blue-100;
+  }
+}

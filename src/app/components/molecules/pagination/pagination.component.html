@@ -1,0 +1,9 @@
+<section class="pagination-container">
+  <a (click)="prevStep()" class="pagination-container-button"><</a>
+  <div class="pagination-display">
+    @for (item of pages.slice(start, end); track $index) {
+    <a class="page">{{ item }}</a>
+    }
+  </div>
+  <a (click)="nextStep()" class="pagination-container-button">></a>
+</section>
